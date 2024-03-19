@@ -123,7 +123,33 @@ body, html {
         font-size: 1em;
         line-height: 0em;
     }      
-    #menubarExpandMenuProjects{
+
+    
+
+#menubarExpandMenuText {
+	position:fixed;
+	top:75px; 
+	left:100px; 
+	font-family: 'Spartan_bold';
+	font-size: 4em;
+	color: black;
+	text-decoration: none;
+	z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menubarExpandMenuProjects{
         position: fixed;
         margin: 40px;
         top: 0px;
@@ -134,6 +160,8 @@ body, html {
     /* max-width: 100px; */
     animation:  animateImagesFlex 0.001s;
 }   
+
+
 @keyframes animateImagesFlex {
     0% {max-width: 50px; }
     100% {max-width: auto;  }

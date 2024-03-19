@@ -4,6 +4,18 @@
 
 // click on the buttons and console.log("id");
 
+
+let fadeValue = 200;
+const fadeOutElement = document.getElementById("menubarExpandMenuText");
+window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    let opacity = 1- Math.min(currentScroll / fadeValue, 1); // Adjust 100 as needed
+    fadeOutElement.style.opacity = opacity.toString();
+});
+
+
+
+
 // get the right id
 let ontwerp  = document.getElementById("ontwerp")
 let onderzoek  = document.getElementById("onderzoek")
