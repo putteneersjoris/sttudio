@@ -2,16 +2,32 @@
 
 
 
-// click on the buttons and console.log("id");
 
+//make the menu expand when scrolling fown or up
 
-let fadeValue = 200;
+let scrollDistance = 50
+
 const fadeOutElement = document.getElementById("menubarExpandMenuText");
+let isAnimating = false;
+
 window.addEventListener('scroll', function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    let opacity = 1- Math.min(currentScroll / fadeValue, 1); // Adjust 100 as needed
-    fadeOutElement.style.opacity = opacity.toString();
+
+    if (currentScroll >= scrollDistance  && !isAnimating) {
+        fadeOutElement.style.animation = 'fadeOutColor 1s forwards';
+        isAnimating = true;
+    } else if (currentScroll < scrollDistance  && isAnimating) {
+        fadeOutElement.style.animation = 'fadeInColor 1s forwards';
+        isAnimating = false;
+    }
 });
+
+
+
+
+
+
+
 
 
 
@@ -163,6 +179,7 @@ function setRandomId() {
     }
     
 window.onload = setRandomId;
+
 
 
 

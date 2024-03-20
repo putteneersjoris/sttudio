@@ -127,23 +127,30 @@ body, html {
     
 
 #menubarExpandMenuText {
+	width: 100px;
 	position:fixed;
 	top:75px; 
 	left:100px; 
 	font-family: 'Spartan_bold';
 	font-size: 4em;
-	color: black;
 	text-decoration: none;
-	z-index: 9999;
+	color:black;
 }
 
 
 
+/*not working yet*/
+/* Fade out animation */
+@keyframes fadeIn {
+    0% {opacity:0; }
+    100% {opacity:1;  }
+}
 
-
-
-
-
+/* Fade in animation */
+@keyframes fadeOut {
+    0% {opacity:1; }
+    100% {opacity:0;  }
+}
 
 
 
@@ -156,6 +163,16 @@ body, html {
         font-size: 1em;
         line-height: 0em;
     }      
+
+#projectBackArrow{
+	position:relative;
+	width:40px;
+	transform: rotate(180deg);
+}
+
+
+
+
 .imagesFlex{
     /* max-width: 100px; */
     animation:  animateImagesFlex 0.001s;
@@ -374,7 +391,35 @@ body, html {
         90% { opacity: 0; }
     }
 
+@media (max-width: 600px) {
+    /* startupscreen */
 
+    #startupScreenContainer {
+        height: 100vh; 
+        justify-content: center;
+        padding-left: j0px;
+    }
+
+
+
+    #startupScreenContainer img{
+	width: 50px;
+
+}
+
+
+      .contentHomepage {
+	font-size: 0.6em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+      
+      }
+
+}
 
 
     /* homepage */
@@ -479,7 +524,11 @@ body, html {
     text-decoration: none;
     color: black;
   }
-  
+
+  .aboutPageBoldLinks:hover{
+    text-decoration: underline;
+  }
+
   .hide {
     display: none;
   }
@@ -670,6 +719,7 @@ body, html {
             object-fit: cover;
             cursor: pointer;
             transition: width 0.3s ease; /* Add transition for size change */
+		padding:5px;
         }
     
         .projectText {
@@ -755,7 +805,6 @@ body, html {
         /* display: inline; */
         /* animation: fadeIn 5s; */
         /* max-width: 50px; */
-        overflow:scroll;
         }
 
     .startupScreenChild {     
