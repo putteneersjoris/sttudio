@@ -31,7 +31,7 @@
             <img class="projectImagePage" src="Heilig Hart (7)_OPEN.jpg" alt="">
             <img class="projectImagePage" src="Heilig Hart (8).jpg" alt="">
             
-	    <div style="padding-top:200px;"></div>
+	    <div id="projectSpacing"></div>
         </div>
         <!-- text voor desktop hier onder -->
         <div class="projectText">
@@ -40,83 +40,7 @@
     </div>
     <div id="contentContainer">
         <a href="./landingpage.html" style="color: rgb(0, 0, 0);"> <div id="contentLogoHome">s<img id="imgInLogoHome" src="../../1c.png">udio  </div></a> 
-    </div> 
-
-<script>
-    const images = document.querySelectorAll('.projectImagePage');
-
-    images.forEach((image) => {
-        let isZoomed = false;
-        const aspectRatio = image.naturalHeight / image.naturalWidth;
-        const fileName = image.getAttribute('src').split('/').pop(); // Get the filename from src attribute
-
-        // Check if filename contains "_OPEN"
-        const isOpenImage = fileName.includes('_OPEN');
-
-	if (window.innerWidth > 900) {
-		if(isOpenImage) {
-			if (aspectRatio > 1) {	
-				image.style.width = '70%'; 
-				image.style.height = 'auto';
-			}
-			else{
-				image.style.width = '70%';
-				image.style.height = 'auto';	
-			}
-		isZoomed = !isZoomed;
-       		}  
-	}
-	else{  /*mobile settings*/
-		if(isOpenImage) {
-			if (aspectRatio > 1) {	
-				image.style.width = '100%'; 
-				image.style.height = 'auto';
-			}
-			else{
-				image.style.width = '100%';
-				image.style.height = 'auto';	
-			}
-		isZoomed = !isZoomed;
-       		} 
-	}
-
-
-
-
-
-
-        image.addEventListener('click', () => {
-            if (window.innerWidth < 900) {
-                if (isZoomed) {
-                    image.style.width = '100px'; /* Revert to the initial width */
-                    image.style.height = '100px'; /* Revert to the initial height */
-                } else {
-                    if (aspectRatio > 1) {
-                        image.style.width = '40%'; /* Resize to 40% width of the container */
-                    } else {
-                        image.style.width = '100%'; /* Expand to 100% width of the container */
-                    }
-                    image.style.height = 'auto'; /* Maintain aspect ratio */
-                }
-            } else {
-                if (isZoomed) {
-                    image.style.width = '100px'; /* Revert to the initial width */
-                    image.style.height = '100px'; /* Revert to the initial height */
-                } else {
-                    if (aspectRatio > 1) {
-                        image.style.width = '70%'; /* Resize to 70% width of the container */
-                    } else {
-                        image.style.width = '70%'; /* Resize to 70% width of the container */
-                    }
-                    image.style.height = 'auto'; /* Maintain aspect ratio */
-                }
-            }
-
-            isZoomed = !isZoomed;
-        });
-    });
-</script>
-
-
+    </div>
+    <script src="../../../scriptProject.js"></script>
 </body>
 </html>

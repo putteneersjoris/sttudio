@@ -738,6 +738,9 @@ body, html {
         }
         
 
+	#projectSpacing{
+		padding-top:200px;
+	}
 
     /* mobile alterations */
 
