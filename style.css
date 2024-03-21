@@ -867,6 +867,24 @@ _::-webkit-full-page-media, _:future, :root   #revealTitleOnderzoek::before {
     background: rgb(255, 255, 255);
     transition: 0.1s ease-in-out;
 }
+
+
+#menubarExpandMenuText {
+        transform: scale(0.7);
+	
+	width: 100px;
+	position:fixed;
+	top:35px; 
+	left:50px; 
+	font-family: 'Spartan_bold';
+	font-size: 4em;
+	text-decoration: none;
+	color:black;
+
+
+}
+
+
     #menubarExpandMenu{
         /* opacity: 0;
         height: 0px; */

@@ -12,8 +12,8 @@
     </div>
     <div class="project_container">
         <div class="projectTitleContainer">
-            <div class="projectTitle">Onderzoek</div>
-        </div>
+            <div class="projectTitle"><a href="../../../projects.html"><img id="projectBackArrow" src="../arrow.png" ></a><span>&emsp;</span>Onderzoek</div>
+	</div>
 
         <!-- text voor mobiel hier onder -->
         <div class="projectTextMobile">
@@ -23,7 +23,7 @@
         <div class="projectImages">
             <img class="projectImagePage" src="cover.jpg" alt="">
   
-
+	    <div id="projectSpacing"></div>
         </div>
         <!-- text voor desktop hier onder -->
         <div class="projectText">
@@ -33,42 +33,7 @@
     <div id="contentContainer">
         <a href="./landingpage.html" style="color: rgb(0, 0, 0);"> <div id="contentLogoHome">s<img id="imgInLogoHome" src="../../1c.png">udio  </div></a> 
     </div> 
-    <script>
-        const images = document.querySelectorAll('.projectImagePage');
-
-        images.forEach((image) => {
-            let isZoomed = false;
-
-            image.addEventListener('click', () => {
-
-                if (window.innerWidth < 900) {
-                    if (isZoomed) {
-                    image.style.width = '100px'; /* Revert to the initial width */
-                    image.style.height = '100px'; /* Revert to the initial height */
-                } else {
-                    image.style.width = '100%'; /* Expand to 100% width of the container */
-                    image.style.height = 'auto'; /* Maintain aspect ratio */
-                }
-
-                isZoomed = !isZoomed;
-
-
-
-                }
-                else{
-                    if (isZoomed) {
-                        image.style.width = '100px'; /* Revert to the initial width */
-                        image.style.height = '100px'; /* Revert to the initial height */
-                    } else {
-                        image.style.width = '40%'; /* Expand to 100% width of the container */
-                        image.style.height = 'auto'; /* Maintain aspect ratio */
-                    }
-
-                    isZoomed = !isZoomed;
-                }
-            });
-        });
-    </script>
-    
+   
+    <script src="../../../scriptProject.js"></script>
 </body>
 </html>
