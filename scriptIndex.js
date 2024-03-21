@@ -3,24 +3,41 @@
 
 
 
-//make the menu expand when scrolling fown or up
 
-let scrollDistance = 50
+
+
+let scrollDistance = 50;
 
 const fadeOutElement = document.getElementById("menubarExpandMenuText");
+
 let isAnimating = false;
 
 window.addEventListener('scroll', function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll >= scrollDistance  && !isAnimating) {
-        fadeOutElement.style.animation = 'fadeOutColor 1s forwards';
-        isAnimating = true;
-    } else if (currentScroll < scrollDistance  && isAnimating) {
-        fadeOutElement.style.animation = 'fadeInColor 1s forwards';
-        isAnimating = false;
-    }
+  if (currentScroll > scrollDistance && !isAnimating) {
+    fadeOutElement.style.animation = 'fadeOut 0.5s forwards';
+    isAnimating = true;
+  } else if (currentScroll < scrollDistance && isAnimating) {
+    const currentOpacity = getComputedStyle(fadeOutElement).opacity;
+    fadeOutElement.style.setProperty('--current-opacity', currentOpacity);
+    fadeOutElement.style.animation = 'fadeIn 0.5s forwards';
+    fadeOutElement.style.color = 'blue'; // Set color to blue on fadeIn
+    isAnimating = false;
+  }
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
