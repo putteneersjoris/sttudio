@@ -941,7 +941,6 @@ _::-webkit-full-page-media, _:future, :root   #revealTitleOnderzoek::before {
     	width: 300px;
         font-size: 0.6em;
         text-align: justify;
-         border: 1px solid red; 
         
     }
     .AboutContent {
