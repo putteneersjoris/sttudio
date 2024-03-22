@@ -4,7 +4,6 @@
 body, html {
     padding: 0px;
     margin: 0px;
-    
   }
 
 
@@ -123,35 +122,6 @@ body, html {
         font-size: 1em;
         line-height: 0em;
     }      
-
-
-
-#menubarExpandMenuText {
-  width: 100px;
-  position: fixed;
-  top: 75px;
-  left: 100px;
-  font-family: 'Spartan_bold';
-  font-size: 4em;
-  text-decoration: none;
-  color: black; /* Initial color */
-}
-
-/* Fade out animation */
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-/* Fade in animation */
-@keyframes fadeIn {
-  0% { opacity: var(--current-opacity); }
-  100% { opacity: 1; }
-}
-
-
-
-
 
 
 
@@ -1008,6 +978,32 @@ font-size: 0.6em;
     }
 
 
+
+
+
+
+#menubarExpandMenuText {
+  width: 100px;
+  position: fixed;
+  top: 75px;
+  left: 100px;
+  font-family: 'Spartan_bold';
+  font-size: 4em;
+  text-decoration: none;
+  color: black;
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% { opacity: var(--current-opacity);  }
+  100% { opacity: 1;  }
+}
 
 
 

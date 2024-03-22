@@ -1,0 +1,31 @@
+
+body{
+height: 5000px;
+}
+
+
+
+
+
+#menubarExpandMenuText {
+  width: 100px;
+  position: fixed;
+  top: 75px;
+  left: 100px;
+  font-family: 'Spartan_bold';
+  font-size: 4em;
+  text-decoration: none;
+  color: black;
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% { opacity: var(--current-opacity);  }
+  100% { opacity: 1;  }
+}
