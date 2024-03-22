@@ -1005,12 +1005,29 @@ font-size: 0.6em;
 	  left: 40px;
 	}
 
+	#onderzoek{
+		width: 200px; 
+	  white-space: nowrap;
+	  overflow: visible; 
+	  text-overflow: ellipsis;
+	}
 
-.collapsible{
-	overflow: hidden;
-}
+
+	
+	#omgeving{
+		width: 200px; 
+	  white-space: nowrap;
+	  overflow: visible; 
+	  text-overflow: ellipsis;
+	}	
 
 
+	#ontwerp{
+		width: 200px; 
+	  white-space: nowrap;
+	  overflow: visible; 
+	  text-overflow: ellipsis;
+	}
 }
 
 

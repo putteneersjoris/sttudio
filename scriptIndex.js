@@ -254,7 +254,6 @@ function randomTransformByTime(counter, randomTime, child, randomAngle, endPos, 
 document.body.style.animation = 'scrolling 12s'
 
 
-console.log('body seelcterd');
 
 let counter =0
 var setImageRotation = setInterval(() => {
