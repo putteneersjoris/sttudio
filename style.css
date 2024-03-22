@@ -396,7 +396,7 @@ body, html {
 
 	#startupScreen{
 	padding-left:20%;	
-
+	margin-top:-100px;
 	}
 
 }
