@@ -997,23 +997,40 @@ font-size: 0.6em;
 
 @media (max-width: 900px) {
 
-#menubarExpandMenuText {
-  
-transform: scale(0.7);
-position: fixed;
-  top: 35px;
-  left: 40px;
+	#menubarExpandMenuText {
+	  
+	transform: scale(0.7);
+	position: fixed;
+	  top: 35px;
+	  left: 40px;
+	}
+
+	#onderzoek{
+		width: 200px; 
+	  white-space: nowrap;
+	  overflow: hidden; 
+	  text-overflow: ellipsis;
+	}
+
+
+	
+	#omgeving{
+		width: 200px; 
+	  white-space: nowrap;
+	  overflow: hidden; 
+	  text-overflow: ellipsis;
+	}	
+
+
+	#ontwerp{
+		width: 200px; 
+	  white-space: nowrap;
+	  overflow: hidden; 
+	  text-overflow: ellipsis;
+	}
+
+	
 }
-
-
-
-
-}
-
-
-
-
-
 
 
 
