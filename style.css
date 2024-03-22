@@ -863,26 +863,10 @@ _::-webkit-full-page-media, _:future, :root   #revealTitleOnderzoek::before {
 }
 
 
-#menubarExpandMenuText {
-        transform: scale(0.7);
-	
-	width: 100px;
-	position:fixed;
-	top:35px; 
-	left:50px; 
-	font-family: 'Spartan_bold';
-	font-size: 4em;
-	text-decoration: none;
-	color:black;
-
-
-}
 
 
     #menubarExpandMenu{
-        /* opacity: 0;
-        height: 0px; */
-
+	
         transform: scale(0.7);
 
         /* padding: 0px; */
@@ -1004,6 +988,58 @@ font-size: 0.6em;
   0% { opacity: var(--current-opacity);  }
   100% { opacity: 1;  }
 }
+
+
+@media (max-width: 900px) {
+
+#menubarExpandMenuText {
+  
+transform: scale(0.7);
+position: fixed;
+  top: 35px;
+  left: 40px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
