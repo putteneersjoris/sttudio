@@ -399,13 +399,6 @@ body, html {
 	margin-top:-100px;
 	}
 
-}
-
-    #startupScreenContainer img{
-	width: 50px;
-
-}
-
 
       .contentHomepage {
 	font-size: 0.6em;
@@ -417,6 +410,13 @@ body, html {
         
       
       }
+
+
+    #startupScreenContainer img{
+	width: 50px;
+
+}
+
 
 }
 
