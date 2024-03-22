@@ -391,10 +391,15 @@ body, html {
     #startupScreenContainer {
         height: 100vh; 
         justify-content: center;
-        padding-left: j0px;
+        padding-left: 0px;
     }
 
+	#startupScreen{
+	padding-left:25%;	
 
+	}
+
+}
 
     #startupScreenContainer img{
 	width: 50px;
@@ -1004,19 +1009,6 @@ position: fixed;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
