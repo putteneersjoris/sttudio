@@ -307,7 +307,6 @@ body, html {
   
 
     .contentParent {
-    
         width: 60%;
         position: absolute;
         left:49.5%;
@@ -320,7 +319,6 @@ body, html {
         font-family: 'Spartan_Light'; font-size: 1em;
     
         /* width: 90%; */
-        /* border: 2px solid black; */
         position: absolute;
         top: 0px;
         left: 0px;
@@ -388,6 +386,8 @@ body, html {
 
 @media (max-width: 600px) {
     /* startupscreen */
+ 
+    }
 
     #startupScreenContainer {
         height: 100vh; 
@@ -416,7 +416,9 @@ body, html {
     #startupScreenContainer img{
 	width: 50px;
 
-}
+	}
+
+
 
 
 }
@@ -948,7 +950,7 @@ font-size: 0.6em;
     /* index and landingpage on mobile */
     .OContent{
         font-size: 0.6em;
-
+	padding-right:10%;
     }
 
     .collapsible{
