@@ -160,7 +160,7 @@ body, html {
 
 #projectBackArrow{
 	position:relative;
-	width:40px;
+	width:52px;
 	top:25px;
 	transform: rotate(180deg);
 }
@@ -539,7 +539,11 @@ body, html {
     display: inline;
     text-decoration: none;
   }
-  
+   
+.aboutVoormaligeMedewerkers{
+    font-family: 'Spartan_light'; font-size: 1em;
+  }
+
   .aboutBold{
     font-family: 'Spartan_bold'; font-size: 1em;
   }
